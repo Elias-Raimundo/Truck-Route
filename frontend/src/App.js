@@ -19,7 +19,7 @@ function App() {
   const [stops, setStops] = useState([]);
 
   const handleSubmit = async () => {
-    const res = await axios.post("http://localhost:8000/api/plan-trip/", form);
+    const res = await axios.post("https://truck-route.onrender.com/api/plan-trip/", form);
 
     setLogs(res.data.logs);
 
