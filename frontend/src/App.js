@@ -21,6 +21,7 @@ function App() {
   const handleSubmit = async () => {
     const res = await axios.post("https://truck-route.onrender.com/api/plan-trip/", form);
 
+    
     setLogs(res.data.logs);
 
     const decoded1 = polyline.decode(res.data.geometry_1);
